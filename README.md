@@ -1,6 +1,6 @@
 # Hi, I'm Bico
 
-**Backend Software Engineer** — iGaming & Fintech
+**Backend Software Engineer** — iGaming
 
 Java (Spring Boot) · Golang · Python · SQL · Kafka · RabbitMQ · Docker · Kubernetes · AWS
 
