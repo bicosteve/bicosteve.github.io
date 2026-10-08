@@ -1,54 +1,29 @@
-# Hi, I'm Bico
+# Bico Steve — Backend Engineer
 
-**Backend Software Engineer** — iGaming
+**I build reliable, event-driven backend systems where transaction correctness matters.** My focus is **Java / Spring Boot** and **Python**.
 
-Java (Spring Boot) · Golang · Python · SQL · Kafka · RabbitMQ · Docker · Kubernetes · AWS
+**Stack:** Java 21 · Spring Boot · Python · FastAPI · Flask · Kafka · RabbitMQ · MySQL · Redis · Docker
 
----
+## How I approach backend systems
 
-## About
+I design for failure and correctness early: explicit message delivery behavior, clear service boundaries, and tests around business rules. In my sportsbook pipeline, Rapid Engine publishes odds and event updates, Event Consumer evaluates moneyline, handicap, and totals markets, and API Gateway handles betting and wallet workflows.
 
-I build production-grade backend systems for high-stakes environments where concurrency, latency, and fault tolerance are non-negotiable. My background spans backend development and systems reliability engineering in the iGaming industry, where I have designed microservices, event-driven architectures, and automated testing infrastructure.
+The messaging services support RabbitMQ or Kafka selected at runtime with `MESSAGING_BROKER`. Rapid Engine uses broker acknowledgements before advancing its event cursor; failed batches retain the previous cursor, so consumers must account for at-least-once delivery. Event settlement follows deterministic rules, and the service repository reports a 220+ test suite covering evaluators and settlement behavior.
 
-I work primarily in **Java (Spring Boot)** and **Golang**, with a focus on distributed messaging, REST API design, and cloud-deployed services on AWS. My SDET background means I build systems with testability and resilience by design, not as an afterthought.
+**Sportsbook stack:** Java 21 · Spring Boot · Kafka / RabbitMQ · MySQL · Redis · Docker
 
----
+## Selected projects
 
-## Featured Project
+- **Sportsbook Platform** — Three Java services for odds/event ingestion, result settlement, and betting/wallet APIs. Rapid Engine and Event Consumer can select Kafka or RabbitMQ with `MESSAGING_BROKER`. [Live platform](https://sportbook.bixx.co.ke/) · [Demo](https://youtu.be/46A08UC7L4M) · [API docs](https://api.bixx.co.ke/api-gateway/swagger-ui/index.html#/)
+  - Source: [Rapid Engine](https://github.com/bicosteve/rapid_engine) · [Event Consumer](https://github.com/bicosteve/event-consumer) · [API Gateway](https://github.com/bicosteve/api-gateway)
+- **Job Board API** — Python/Flask hiring platform with candidate and admin workflows, server-sent event streams, Redis-backed rate limiting, and a React/TypeScript frontend. [Source](https://github.com/bicosteve/job-board-api) · [Live app](https://bixx.co.ke/)
+- **Google Search** — FastAPI app for Google organic search through SerpAPI, with a web interface, JSON API, and search history. [Source](https://github.com/bicosteve/inizio-media) · [Live app](https://api.bixx.co.ke/gsearch/)
 
-### 🎯 [Sportsbook Platform](https://github.com/bicosteve)
+## Other projects
 
-A production-ready sportsbook backend built as three decoupled microservices — `rapid-engine`, `event-consumer`, and `api-gateway` — communicating via RabbitMQ. Includes a real-time result evaluation engine supporting moneyline, handicap, and totals markets, a wallet and transaction system with freebet logic, and Redis-backed caching for low-latency reads.
+- **[Booking System](https://github.com/bicosteve/booking-system)** — Go hotel reservation service with role-based access, Stripe payments, and asynchronous messaging through Kafka or RabbitMQ.
+- **[Calory Tracker](https://github.com/bicosteve/callory-tracker)** — Go service for nutritional tracking with authentication and a relational data layer.
 
-**Stack:** Java (Spring Boot) · RabbitMQ · Redis · MySQL · Docker · AWS
+## Contact
 
----
-
-## Other Projects
-
-- 💼 **[Job Board API](https://github.com/bicosteve/job-board-api)** — Production-deployed recruitment backend with Celery/RabbitMQ background email processing, Redis caching, and Nginx/Docker deployment with live Swagger docs. Built with Python (Flask).
-
-- 🏨 **[Booking System](https://github.com/bicosteve/booking-system)** — Hotel reservation service with payment processing and asynchronous booking confirmation. Built with Golang, designed around clean service boundaries and reliable message handling.
-
-- 🌊 **[Flood Prediction Model](https://github.com/bicosteve/flashfloodmodel)** — Flask-based ML pipeline for real-time flood risk prediction. Includes a data validation layer and UI delivery, deployed as a containerized service.
-
-- 🔥 **[Calory Tracker](https://github.com/bicosteve/callory-tracker)** — Golang service for tracking daily nutritional intake, featuring user auth and a persistent data layer.
-
----
-
-## Skills
-
-**Languages:** Java, Golang, Python, SQL
-**Frameworks:** Spring Boot, Flask
-**Databases:** MySQL, PostgreSQL, Redis, MongoDB
-**Messaging:** Kafka, RabbitMQ
-**Cloud & Infrastructure:** AWS, Docker, Kubernetes
-**Testing & CI/CD:** Playwright, GitHub Actions
-
----
-
-## Connect
-
-- 🌐 **LinkedIn:** [bico-steve](https://www.linkedin.com/in/bico-steve/)
-- ✉️ **Email:** <bicosteve4@gmail.com>
-- 🧑‍💻 **GitHub:** [@bicosteve](https://github.com/bicosteve)
+[Portfolio](https://bicosteve.github.io/) · [GitHub](https://github.com/bicosteve) · [LinkedIn](https://www.linkedin.com/in/bico-steve/) · [Email](mailto:bicosteve4@gmail.com)

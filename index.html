@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags-->
-    <title>Bico Steve | Backend Software Engineer | Java (Spring Boot) | Golang | Python (Flask, Fastapi) </title>
-    <meta name="title" content="Bico Steve | Backend Software Engineer - Java, Spring Boot, Golang">
-    <meta name="description" content="Bico Steve is a Backend Software Engineer with experience in building production-grade microservices and distributed systems in the iGaming industry. Proficient in Java (Spring Boot), Golang, Kafka, RabbitMQ, and event-driven architecture.">
-    <meta name="keywords" content="Backend Software Engineer, Java Developer, Spring Boot Developer, Golang Developer, Microservices Engineer, Distributed Systems, Kafka, RabbitMQ, REST API Developer, iGaming Backend Engineer, Nairobi Kenya Software Engineer, Event-Driven Architecture, Docker, Kubernetes, AWS">
+<title>Bico Steve | Backend Engineer | Distributed Systems &amp; Event-Driven Platforms</title>
+<meta name="title" content="Bico Steve | Backend Engineer | Distributed Systems &amp; Event-Driven Platforms">
+<meta name="description" content="Backend engineer building event-driven, transaction-critical systems with Java, Spring Boot, and Python. Focused on correctness, delivery guarantees, and predictable failure.">
     <meta name="author" content="Bico Steve">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bicosteve.github.io/" />
+<link rel="icon" href="./assets/bico.jpg" type="image/jpeg">
 
     <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bicosteve.github.io">
-  <meta property="og:title" content="Bico Steve | Backend Software Engineer - Java, Spring Boot, Golang">
-  <meta property="og:description" content="Backend Software Engineer with 3+ years building production-grade microservices in the iGaming industry. Specializes in Java (Spring Boot), Golang, Kafka, RabbitMQ, and event-driven architecture.">
+  <meta property="og:title" content="Bico Steve | Backend Engineer | Distributed Systems &amp; Event-Driven Platforms">
+  <meta property="og:description" content="Backend engineer building event-driven, transaction-critical systems with Java, Spring Boot, and Python.">
   <meta property="og:image" content="https://bicosteve.github.io/assets/bico.jpg">
+<meta property="og:image:alt" content="Portrait of Bico Steve, backend engineer">
 
   <!-- Open Graph / Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bicosteve.github.io">
-  <meta name="twitter:title" content="Bico Steve | Backend Software Engineer - Java, Spring Boot, Golang">
-  <meta name="twitter:description" content="Backend Software Engineer with 3+ years building production-grade microservices in the iGaming industry. Specializes in Java (Spring Boot), Golang, Kafka, RabbitMQ, and event-driven architecture.">
+  <meta name="twitter:title" content="Bico Steve | Backend Engineer | Distributed Systems &amp; Event-Driven Platforms">
+  <meta name="twitter:description" content="Backend engineer building event-driven, transaction-critical systems with Java, Spring Boot, and Python.">
   <meta name="twitter:image" content="https://bicosteve.github.io/assets/bico.jpg">
+<meta name="twitter:image:alt" content="Portrait of Bico Steve, backend engineer">
 
   <!-- Structured Data for Search Engines -->
   <script type="application/ld+json">
@@ -36,7 +38,7 @@
     "name": "Bico Steve",
     "url": "https://bicosteve.github.io",
     "image": "https://bicosteve.github.io/assets/bico.jpg",
-    "jobTitle": "Backend Software Engineer",
+    "jobTitle": "Backend Engineer",
     "worksFor": {
       "@type": "Organization",
       "name": "Shade Tech Limited"
@@ -45,32 +47,13 @@
       "https://www.linkedin.com/in/bico-steve/",
       "https://github.com/bicosteve"
     ],
-    "knowsAbout": ["Java", "Spring Boot", "Golang", "Python", "Kafka", "RabbitMQ", "Microservices", "Distributed Systems", "AWS", "Docker", "Kubernetes"]
+    "knowsAbout": ["Java", "Spring Boot", "Python", "FastAPI", "Flask", "Kafka", "RabbitMQ", "Microservices", "Distributed Systems", "AWS", "Docker", "Kubernetes"]
   }
   </script>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
-    <style>
-      .project-video-container {
-        width: 100%;
-        margin-top: 1rem;
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      .project-video {
-        width: 100%;
-        display: block;
-        border-radius: 8px;
-        background-color: #111;
-      }
-      .project-description {
-        font-size: 0.95rem;
-        line-height: 1.4rem;
-        margin: 0.5rem 0;
-        text-align: left;
-      }
-    </style>
+
 </head>
 <body>
     <nav id="desktop-nav">
@@ -97,25 +80,25 @@
     <nav id="hamburger-nav">
         <div class="logo">Bico</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li>
-                    <a href="#about" onclick="toggleMenu()"">About</a>
-                </li>
-                <li>
-                    <a href="#experience" onclick="toggleMenu()">Experience</a>
-                </li>
-                <li>
-                    <a href="#projects" onclick="toggleMenu()">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" onclick="toggleMenu()">Contact</a>
-                </li>
-            </div>
+<button class="hamburger-icon" type="button" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleMenu()">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</button>
+<ul class="menu-links" inert>
+<li>
+<a href="#about" onclick="toggleMenu()">About</a>
+</li>
+<li>
+<a href="#experience" onclick="toggleMenu()">Experience</a>
+</li>
+<li>
+<a href="#projects" onclick="toggleMenu()">Projects</a>
+</li>
+<li>
+<a href="#contact" onclick="toggleMenu()">Contact</a>
+</li>
+</ul>
         </div>
     </nav>
 
@@ -126,18 +109,19 @@
             <img src="./assets/bico.jpg" alt="Bico Steve - Backend Software Engineer">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I am</p>
-            <h1 class="title">Bico Steve</h1>
-            <p class="section__text__p2">Backend Software Engineer &mdash; Java (Spring Boot) &amp; Golang</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Bico_Steve_Backend_Engineer_CV.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
+<p class="section__text__p1">Backend engineer building</p>
+<h1 class="title">Bico Steve</h1>
+<p class="section__text__p2">Event-driven, transaction-critical systems</p>
+<p class="hero-focus">Java &amp; Spring Boot · Python · Kafka · RabbitMQ</p>
+<div class="btn-container">
+<a class="btn btn-color-2" href="./assets/Bico_Steve_RESUME.pdf" download>Download résumé</a>
+<a class="btn btn-color-1" href="#projects">Explore my work</a>
+</div>
             <div id="socials-container">
-                <a href="https://www.linkedin.com/in/bico-steve/" target="_blank">
+<a href="https://www.linkedin.com/in/bico-steve/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                     <img src="./assets/linkedin_icon.png" alt="Bico Steve LinkedIn profile" class="icon">
                 </a>
-               <a href="https://github.com/bicosteve" target="_blank">
+               <a href="https://github.com/bicosteve" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                  <img src="./assets/github_icon.png" alt="Bico Steve GitHub profile" class="icon">
                </a>
             </div>
@@ -153,8 +137,8 @@
                 <div class="about-containers">
                     <div class="details-container">
                         <img class="icon" src="./assets/experience_icon_2.png" alt="experience icon">
-                        <h3>Experience</h3>
-                        <p>3+ years <br/> Backend &amp; Distributed Systems</p>
+<h3>Focus</h3>
+<p>Backend systems<br/>Distributed messaging<br/>Transaction correctness</p>
                     </div>
                     <div class="details-container">
                         <img class="icon" src="./assets/education_icon.png" alt="education icon">
@@ -170,247 +154,121 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I'm a Backend Software Engineer with 3+ years of experience building and shipping production-grade systems in the iGaming and betting industry. I design and deploy microservices and REST APIs using <strong>Java (Spring Boot)</strong>,<strong>Python (Flask)</strong>, and <strong>Golang</strong>, with distributed messaging via <strong>Kafka</strong> and <strong>RabbitMQ</strong>, caching with Redis, and infrastructure on AWS, Docker, and Kubernetes. My SDET experience gives me an edge in building systems with testability and resilience baked in from the start, not bolted on after the fact. I'm currently building a sportsbook platform with event-driven microservices, real-time result evaluation, and a transaction engine supporting freebet logic.</p>
+                    <p>I build backend systems where correctness matters under concurrency: event-driven services, transaction workflows, and APIs that need to fail predictably. My primary stack is <strong>Java and Spring Boot</strong> for event-driven services and <strong>Python</strong> for APIs and search applications. In my sportsbook pipeline, Rapid Engine and Event Consumer can select Kafka or RabbitMQ through environment configuration. A background in software testing shapes how I approach reliability: explicit delivery behavior, focused automated tests, and clear service boundaries. I’m currently developing a three-service sportsbook platform covering odds ingestion, event settlement, and betting APIs.</p>
             </div>
             </div>
         </div>
-        <img src="./assets/down_arrow_icon.png" alt="arrow icon" class="icon arrow" onclick="location.href='/#experience'">
+        <a class="icon arrow" href="#experience" aria-label="Go to engineering highlights"><img src="./assets/down_arrow_icon.png" alt=""></a>
     </section>
 
-    <!-- Experience Section -->
-     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Golang</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>TypeScript / Node.js</h3>
-                                <p>Backend &amp; Automation</p>
-                            </div>
-                        </article> -->
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Infrastructure &amp; Tools</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Kafka, RabbitMQ</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Redis</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>AWS</h3>
-                                <p>Cloud Deployments</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>Docker, Kubernetes</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="/assets/checkmark_icon.png" alt="check mark" class="icon">
-                            <div>
-                                <h3>GitHub Actions</h3>
-                                <p>Production Experience</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/down_arrow_icon.png" alt="arrow icon" class="icon arrow" onclick="location.href='/#projects'">
-     </section>
+<!-- Engineering Highlights Section -->
+<section id="experience">
+<p class="section__text__p1">How I Approach Systems</p>
+<h1 class="title">Engineering Highlights</h1>
+<div class="experience-details-container">
+<div class="about-containers">
+<div class="details-container proof-card">
+<p class="project-kicker">Messaging architecture</p>
+<h2 class="experience-sub-title">One pipeline, two brokers</h2>
+<p>Rapid Engine and Event Consumer each support RabbitMQ or Kafka, selected through <code>MESSAGING_BROKER</code>. Broker-specific publishers keep transport configuration out of the event flow.</p>
+<a href="https://github.com/bicosteve/rapid_engine" target="_blank" rel="noopener noreferrer">Explore broker selection in the source</a>
+</div>
+<div class="details-container proof-card">
+<p class="project-kicker">Reliability</p>
+<h2 class="experience-sub-title">Delivery you can reason about</h2>
+<p>Batch publishing waits for broker acknowledgement before advancing the event cursor. Failed batches retain the previous cursor; consumers are designed around at-least-once delivery.</p>
+<a href="https://github.com/bicosteve/rapid_engine" target="_blank" rel="noopener noreferrer">Read the delivery notes</a>
+</div>
+<div class="details-container proof-card">
+<p class="project-kicker">Settlement correctness</p>
+<h2 class="experience-sub-title">Explicit result rules</h2>
+<p>Settlement handles moneyline, handicap, and totals markets with deterministic bet resolution. The Event Consumer repository reports a 220+ test suite covering evaluators and settlement behavior.</p>
+<a href="https://github.com/bicosteve/event-consumer" target="_blank" rel="noopener noreferrer">Review settlement logic and tests</a>
+</div>
+</div>
+</div>
+<a class="icon arrow" href="#projects" aria-label="Go to projects"><img src="./assets/down_arrow_icon.png" alt=""></a>
+</section>
 
 
      <!--Projects Section-->
      <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+<div class="experience-details-container">
+<div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/sportsbook_platform.png"
-                alt="Sportsbook Platform - Java Spring Boot Microservices"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Sportsbook Platform</h2>
-            <p class="project-description">Event-driven microservices platform (rapid-engine, event-consumer, api-gateway) with RabbitMQ messaging, real-time result evaluation, and a wallet/transaction engine. Built with Java (Spring Boot), MySQL, Redis, and Docker.</p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/bicosteve'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-            </a>
-            </div>
-            <div class="project-video-container">
-              <video class="project-video" controls preload="none" poster="./assets/sportsbook_platform.png">
-                <source src="./assets/videos/sportsbook-platform-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+<div class="details-container color-container featured-project">
+<p class="project-kicker">Featured · Distributed systems</p>
+<h2 class="experience-sub-title project-title">Sportsbook Platform</h2>
+<p class="project-description">A three-service Java platform: Rapid Engine ingests odds and events, Event Consumer evaluates results and emits settlement updates, and API Gateway handles betting and wallet workflows. Rapid Engine and Event Consumer can each select RabbitMQ or Kafka at runtime with <code>MESSAGING_BROKER</code>.</p>
+<div class="project-highlights">
+<p><strong>Design focus</strong> Acknowledged message delivery, retry and dead-letter paths, explicit settlement rules, and transaction-safe wallet workflows.</p>
+<p><strong>Evidence</strong> 220+ settlement-service tests and 250+ API gateway tests are reported in the project repositories.</p>
+</div>
+<div class="project-stack">Java 21 · Spring Boot · RabbitMQ / Kafka · MySQL · Redis · Docker</div>
+<div class="btn-container project-links">
+<a class="btn btn-color-1 project-btn" href="https://sportbook.bixx.co.ke/" target="_blank" rel="noopener noreferrer">Live platform</a>
+<a class="btn btn-color-2 project-btn" href="https://youtu.be/46A08UC7L4M" target="_blank" rel="noopener noreferrer">Watch demo</a>
+<a class="btn btn-color-2 project-btn" href="https://api.bixx.co.ke/api-gateway/swagger-ui/index.html#/" target="_blank" rel="noopener noreferrer">API docs</a>
+</div>
+<div class="project-repositories">
+<span>Service repositories:</span>
+<a href="https://github.com/bicosteve/rapid_engine" target="_blank" rel="noopener noreferrer">Rapid Engine</a>
+<a href="https://github.com/bicosteve/event-consumer" target="_blank" rel="noopener noreferrer">Event Consumer</a>
+<a href="https://github.com/bicosteve/api-gateway" target="_blank" rel="noopener noreferrer">API Gateway</a>
+</div>
+</div>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/job_board_api.png"
-                alt="Job Board API - Python Flask Recruitment Backend"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Job Board API</h2>
-            <p class="project-description">Production-deployed recruitment backend serving job postings and applicant workflows, with Celery/RabbitMQ background email processing, Redis caching, and Nginx/Docker deployment with live Swagger docs.</p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/bicosteve/job-board-api'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-            </a>
-            </div>
-            <div class="project-video-container">
-              <video class="project-video" controls preload="none" poster="./assets/job_board_api.png">
-                <source src="./assets/videos/job-board-api-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+<div class="details-container color-container">
+<p class="project-kicker">Production project</p>
+<h2 class="experience-sub-title project-title">Job Board API</h2>
+<p class="project-description">A hiring platform with candidate and admin workflows, server-sent event streams, Redis-backed rate limiting, and a containerized Flask backend. The repository includes a React and TypeScript frontend, API documentation, and CI checks.</p>
+<div class="project-stack">Python · Flask · MySQL · Redis · Celery · Docker · React · TypeScript</div>
+<div class="btn-container project-links">
+<a class="btn btn-color-2 project-btn" href="https://github.com/bicosteve/job-board-api" target="_blank" rel="noopener noreferrer">Source</a>
+<a class="btn btn-color-2 project-btn" href="https://bixx.co.ke/" target="_blank" rel="noopener noreferrer">Live demo</a>
+</div>
+</div>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/booking_api.png"
-                alt="Booking System - Golang Hotel Booking API"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Booking System</h2>
-            <p class="project-description">Hotel booking service with payment processing, built in Golang with clean service boundaries and reliable message handling.</p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/bicosteve/booking-system'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-            </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href='http://35.242.242.95/docs/index.html'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-          </a>
-            </div>
-            <div class="project-video-container">
-              <video class="project-video" controls preload="none" poster="./assets/booking_api.png">
-                <source src="./assets/videos/booking-system-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+<div class="details-container color-container">
+<p class="project-kicker">Other project</p>
+<h2 class="experience-sub-title project-title">Google Search</h2>
+<p class="project-description">A FastAPI search application that retrieves Google organic results through SerpAPI, offers both a web interface and JSON API, and stores search history.</p>
+<div class="project-stack">Python · FastAPI · SerpAPI · Pydantic · Docker</div>
+<div class="btn-container project-links">
+<a class="btn btn-color-2 project-btn" href="https://github.com/bicosteve/inizio-media" target="_blank" rel="noopener noreferrer">Source</a>
+<a class="btn btn-color-2 project-btn" href="https://api.bixx.co.ke/gsearch/" target="_blank" rel="noopener noreferrer">Live app</a>
+</div>
+</div>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/callory_tracker.png"
-                alt="Calory Tracker - Golang REST API"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Calory Tracker</h2>
-            <p class="project-description">Golang backend service for tracking daily nutritional intake, with user authentication and a persistent relational data layer.</p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/bicosteve/callory-tracker'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-            </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://clrytracker-93e98c69c23e.herokuapp.com/'
-                target="_blank"
-                rel="noopener noreferrer">
-                Live Demo
-              </a>
-            </div>
-            <div class="project-video-container">
-              <video class="project-video" controls preload="none" poster="./assets/callory_tracker.png">
-                <source src="./assets/videos/calory-tracker-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+<div class="details-container color-container">
+<div class="article-container">
+<img src="./assets/booking_api.png" alt="Hotel booking API documentation screenshot" class="project-img" loading="lazy">
+</div>
+<h2 class="experience-sub-title project-title">Booking System</h2>
+<p class="project-description">Go hotel reservation service with role-based access, Stripe payments, and asynchronous messaging through Kafka or RabbitMQ. Deployed behind Nginx on a Google Cloud VM.</p>
+<div class="project-stack">Go · Kafka / RabbitMQ · Stripe · Redis · MySQL · Google Cloud</div>
+<div class="btn-container project-links">
+<a class="btn btn-color-2 project-btn" href="https://github.com/bicosteve/booking-system" target="_blank" rel="noopener noreferrer">Source &amp; API docs</a>
+</div>
+</div>
+
+<div class="details-container color-container">
+<div class="article-container">
+<img src="./assets/callory_tracker.png" alt="Calory Tracker application screenshot" class="project-img" loading="lazy">
+</div>
+<h2 class="experience-sub-title project-title">Calory Tracker</h2>
+<p class="project-description">Go service for tracking daily nutritional intake, with user authentication and a relational data layer.</p>
+<div class="project-stack">Go · REST API · Authentication · Relational database</div>
+<div class="btn-container project-links">
+<a class="btn btn-color-2 project-btn" href="https://github.com/bicosteve/callory-tracker" target="_blank" rel="noopener noreferrer">Source</a>
+</div>
+</div>
 
         </div>
       </div>
-      <img
-        src="./assets/down_arrow_icon.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+<a class="icon arrow" href="#contact" aria-label="Go to contact information"><img src="./assets/down_arrow_icon.png" alt=""></a>
     </section>
 
      <!--Contact Section-->
@@ -432,7 +290,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:bicosteve4@gmail.com" target="_blank">bicosteve4@gmail.com</a></p>
+          <p><a href="mailto:bicosteve4@gmail.com">bicosteve4@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -440,7 +298,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/bico-steve/" target="_blank">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/bico-steve/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>
     </section>
