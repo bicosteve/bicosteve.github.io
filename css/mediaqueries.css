@@ -64,7 +64,16 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
+.hero-focus {
+font-size: 0.9rem;
+}
+
+.project-links .btn {
+width: auto;
+min-width: 8rem;
+}
+
+#contact,
   footer {
     height: 40vh;
   }

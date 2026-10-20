@@ -82,12 +82,15 @@ a:hover {
 }
 
 .hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+background: transparent;
+border: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 24px;
+width: 30px;
+cursor: pointer;
+padding: 0;
 }
 
 .hamburger-icon span {
@@ -98,14 +101,16 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0%;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+position: absolute;
+top: 100%;
+right: 0%;
+background-color: white;
+width: fit-content;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3 ease-in-out;
+padding: 0;
+margin: 0;
 }
 
 .menu-links li {
@@ -300,9 +305,16 @@ section {
 }
 
 .arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+position: absolute;
+right: -5rem;
+bottom: 2.5rem;
+}
+
+.arrow img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: contain;
 }
 
 .details-container {
@@ -388,6 +400,117 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.hero-focus {
+font-size: 1rem;
+letter-spacing: 0.03em;
+margin: 0.75rem 0 1.5rem;
+}
+
+.btn {
+box-sizing: border-box;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+
+.project-description {
+font-size: 0.95rem;
+line-height: 1.65;
+margin: 0.75rem 0;
+text-align: left;
+}
+
+#projects .about-containers {
+flex-wrap: wrap;
+}
+
+.featured-project {
+flex: 1 1 100%;
+text-align: left;
+}
+
+.featured-project .project-title,
+.featured-project .project-kicker {
+text-align: left;
+}
+
+.project-kicker {
+color: rgb(85, 85, 85);
+font-size: 0.8rem;
+font-weight: 600;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+}
+
+.proof-card {
+text-align: left;
+}
+
+.proof-card .experience-sub-title {
+font-size: 1.3rem;
+margin: 0.5rem 0;
+}
+
+.proof-card p:not(.project-kicker) {
+line-height: 1.6;
+margin: 0.75rem 0;
+}
+
+.proof-card a {
+font-weight: 600;
+text-decoration: underline;
+text-underline-offset: 0.2rem;
+}
+
+.project-highlights {
+border-left: 3px solid rgb(53, 53, 53);
+margin: 1rem 0;
+padding-left: 1rem;
+}
+
+.project-highlights p {
+line-height: 1.6;
+margin: 0.5rem 0;
+}
+
+.project-stack {
+color: rgb(85, 85, 85);
+font-size: 0.9rem;
+margin: 1rem 0;
+}
+
+.project-links {
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+
+.featured-project .project-links {
+justify-content: flex-start;
+}
+
+.project-repositories {
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+gap: 0.75rem;
+margin-top: 1.25rem;
+}
+
+.project-repositories a {
+font-weight: 600;
+text-decoration: underline;
+text-underline-offset: 0.2rem;
+}
+
+.color-container .article-container {
+height: 12rem;
+margin-bottom: 1rem;
+}
+
+.color-container .project-img {
+object-fit: cover;
 }
 
 /* Contact Section */
